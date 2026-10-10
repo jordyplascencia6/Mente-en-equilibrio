@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'Style.css' %}">
+    <script src="{% static 'commands.js' %}"></script>
+    <title>Mente en Equilibrio</title>
+</head>
+<body>
+
+   <!----Menu Fijo-->
+   <header class="header">
+      <nav class="nav container">
+         <div class="nav__data">
+               <a href="#" class="nav__log">
+                  <img src="{% static 'img/logosencillo.png' %}" alt="Logo" class="logo">
+               </a>
+
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-circle-line nav__close"></i>
+            </div>
+         </div>
+
+         <!--NAV Menu-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#" class="nav__link">Home</a></li>
+
+               <li><a href="#" class="nav__link">About Us</a></li>
+
+               <li><a href="#" class="nav__link">Our Services</a></li>
+
+               <li><a href="#" class="nav__link">Contact</a></li>
+
+               <li><a href="#" class="nav__link login"><i class="ri-user-line dropdown__arrow"></i>Log In</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <section class="bienvenida">
+         <div class="welcome__container contenedor">
+            <div class="bienvenida-text">
+               <h2 class="subtitle">Bienestar mental en el entorno laboral</h2>
+               <p class="welcome__paragraph">En Mente en Equilibrio ayudamos a las empresas a fortalecer el bienestar emocional de sus equipos, a traves de talleres, platicas y herramientas practicas de psicologia</p>
+               <a href="#" class="cta"><i class="ri-arrow-right-line"></i>Contactanos</a>
+            </div>
+
+            <figure class="welcome__picture">
+                <img src="{% static 'img/logo.png' %}" alt="" class="welcome__logo">
+            </figure>
+         </div>
+      </section>
+
+      <section class="servicios contenedor">
+         <h3 class="sub-sub">Nuestros Servicios</h3>
+         <h2 class="subtitle">Herramientas para un mejor equipo</h2>
+         <p>Ofrecemos soluciones personalizadas para promover la salud mental, mejorar la comunicacion y aumentar la productividad en tu empresa.</p>
+
+         <div class="servicios__main">
+            <article class="servicios__icons">
+               <i class="ri-brain-line servicio__icon"></i>
+               <h3 class="servicio__title">Talleres de bienestar</h3>
+               <p class="servicio__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex? </p>
+               <a href="#" class="cta2">Saber mas<i class="ri-arrow-right-line"></i></a>
+            </article>
+            
+            <article class="servicios__icons">
+               <i class="ri-megaphone-line servicio__icon"></i>
+               <h3 class="servicio__title">Platicas y Conferencias</h3>
+               <p class="servicio__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex? </p>
+               <a href="#" class="cta2">Saber mas<i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="servicios__icons">
+               <i class="ri-draft-line servicio__icon"></i>
+               <h3 class="servicio__title">Evaluaciones</h3>
+               <p class="servicio__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex? </p>
+               <a href="#" class="cta2">Saber mas<i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="servicios__icons">
+               <i class="ri-pass-valid-line servicio__icon"></i>
+               <h3 class="servicieo__title">Atencion Psicologica</h3>
+               <p class="servicio__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex? </p>
+               <a href="#" class="cta2">Saber mas<i class="ri-arrow-right-line"></i></a>
+            </article>
+         </div>
+      </section>
+
+      <section class="informationgeneral">
+         <div class="information contenedor">
+
+            <!-- Lado izquierdo: frase -->
+            <div class="information-quote">
+               <i class="ri-plant-line quote-icon"></i>
+               <h2 class="subtitle2">“Una mente sana, construye mejores equipos”</h2>
+            </div>
+
+            <!-- Lado derecho: beneficios -->
+            <div class="information-features">
+               <div class="feature">
+               <i class="ri-shield-check-line"></i>
+               <p>Profesionales certificados</p>
+               </div>
+
+               <div class="feature">
+               <i class="ri-team-line"></i>
+               <p>Enfoque personalizado</p>
+               </div>
+
+               <div class="feature">
+               <i class="ri-poker-hearts-line"></i>
+               <p>Mejores ambientes laborales</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="aboutus">
+         <div class="aboutus__section contenedor">
+            <h3 class="sub-sub">About Us</h3>
+            <h2 class="subtitle">Mision y Vision </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facilis asperiores tempore excepturi eligendi, incidunt ad nemo quam sint dicta, neque quia vero iure dolorum harum unde eos ab. Vel.</p>
+         </div>
+      </section>
+
+      <section class="testimonios">
+         <h3 class="sub-sub1">Our Clients</h3>
+         <h2 class="subtitle3">Lo que nuestros clientes dicen</h2>
+         <div class="testimony__container contenedor">
+            <i class="ri-arrow-left-line testimony__arrow" id="before"></i>
+
+            <section class="testimony__body testimony__body--show" data-id="1">
+               <div class="testimony__texts">
+                  <h2 class="subtitle4">Mi nombre es Jordan Alexander, <span class="testimony__course">con plan Normal.</span></h2>
+                  <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+               </div>
+
+               <figure class="testimony__picture">
+                    <img src="{% static 'img/gene2.jpg' %}" alt="" class="testimony__img">
+               </figure>
+            </section>
+
+            <section class="testimony__body" data-id="2">
+               <div class="testimony__texts">
+                  <h2 class="subtitle4">Mi nombre es Zaird Bermudez, <span class="testimony__course">estudiante de Empresarial.</span></h2>
+                  <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem blanditiis</p>
+               </div>
+
+               <figure class="testimony__picture">
+                  <img src="{% static 'img/gene1.jpg' %}" alt="" class="testimony__img">
+               </figure>
+            </section>
+
+            <section class="testimony__body" data-id="3">
+               <div class="testimony__texts">
+                  <h2 class="subtitle4">Mi nombre es Carmen Cedano, <span class="testimony__course">con plan Plus.</span></h2>
+                  <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, asperiores eaque totam nulla repudiandae quasi</p>
+               </div>
+
+               <figure class="testimony__picture">
+                  <img src="{% static 'img/gene3.jpg' %}" alt="" class="testimony__img">
+               </figure>
+            </section>
+
+
+            <i class="ri-arrow-right-line testimony__arrow" id="next"></i>
+         </div>
+      </section>
+
+      <section class="price contenedor">
+         <div class="price__container">
+            <h3 class="sub-sub">Costs </h3>
+            <h2 class="subtitle">Obten el plan perfecto para tu empresa</h2>
+         </div>
+
+         <div class="price__table">
+            <div class="price__element">
+               <p class="price__name">Normal</p>
+               <h3 class="price__price">$20/mes</h3>
+
+               <div class="price__items">
+                  <p class="price__features">Evaluaciones</p>
+                  <p class="price__features">Platicas</p>
+                  <p class="price__features">Atencion Psicologica</p>
+               </div>
+
+               <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+
+
+            <div class="price__element price__element--best">
+               <p class="price__name">Plus</p>
+               <h3 class="price__price">$30/mes</h3>
+
+               <div class="price__items">
+                  <p class="price__features">Talleres</p>
+                  <p class="price__features">Conferencias</p>
+                  <p class="price__features">Atencion Psicologica</p>
+               </div>
+
+               <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+
+
+            <div class="price__element">
+               <p class="price__name">Empresarial</p>
+               <h3 class="price__price">$40/mes</h3>
+
+               <div class="price__items">
+                  <p class="price__features">Evaluaciones ilimitadas</p>
+                  <p class="price__features">Conferencias y talleres</p>
+                  <p class="price__features">Atencion Psicologica</p>
+               </div>
+
+               <a href="#" class="price__cta">Empieza ahora</a>
+            </div> 
+         </div>
+      </section>
+   </main>
+   
+   <footer class="footer">
+      <section class="footer__container contenedor">
+         <nav class="nav nav--footer">
+            <h2 class="footer__title">Mente en Equilibrio.</h2>
+
+            <ul class="nav__list nav__link--footer">
+               <li class="nav__items">
+                  <a href="#" class="nav__link">Home</a>
+               </li>
+               <li class="nav__items">
+                  <a href="#" class="nav__link">About Us</a>
+               </li>
+               <li class="nav__items">
+                  <a href="#" class="nav__link">Our Services</a>
+               </li>
+               <li class="nav__items">
+                  <a href="#" class="nav__link">Contact</a>
+               </li>
+            </ul>
+         </nav>
+
+         <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <h2 class="footer__newsletter">Contactanos</h2>
+            <div class="footer__inputs">
+               <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+               <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+         </form>
+      </section>
+
+      <section class="footer__copy contenedor">
+         <div class="footer__social">
+            <a href="#" class="footer__icons"><i class="ri-facebook-circle-line footer__img"></i></a>
+            <a href="#" class="footer__icons"><i class="ri-github-line footer__img"></i></a>
+            <a href="#" class="footer__icons"><i class="ri-instagram-line footer__img"></i></a>
+         </div>
+
+         <h3 class="footer__copyright">Derechos reservados &copy; Mente en equilibrio</h3>
+      </section>
+   </footer>
+
+   <script src="{% static 'commands.js' %}"></script>
+   <script src="{% static 'slider.js' %}"></script>
+
+</body>
+</html>
