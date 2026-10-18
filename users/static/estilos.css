@@ -40,6 +40,7 @@ body{
     width: 800px;
     height: 500px;
     display: flex;
+    position: relative;
 }
 
 .container-form{
@@ -158,4 +159,60 @@ span::after {
 
 .container.toggle .singup{
     transform: translateX(0);
+}
+
+/*Welcome*/
+
+.container-welcome{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    border-radius: 50% 0 0 50%;
+}
+
+.container.toggle .container-welcome{
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+}
+
+.container-welcome .welcome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.welcome-singin{
+    transform: translateX(100%);
+}
+
+.container-welcome h3{
+    font-size: 40px;
+    color: #334155;
+}
+
+.container-welcome p{
+    font-size: 14px;
+    text-align: center;
+    color: #6B7280;
+}
+
+.container-welcome .button{
+
+}
+
+.container.toggle .welcome-singin{
+    transform: translateX(0);
+}
+
+.container.toggle .welcome-singup{
+    transform: translateX(-100%);
 }
