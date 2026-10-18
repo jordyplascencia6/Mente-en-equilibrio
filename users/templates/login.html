@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="{% static 'estilos.css' %}">
+        <title>Log in</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!----Formulario inicio de Sesion-->
+            <div class="container-form">
+                <form action="" class="singin">
+                    <h2>Iniciar Sesion</h2>
+                    <div class="social-network">
+                        <i name="logo-facebook" class="ri-facebook-circle-line icons"></i>
+                        <i href="https://github.com/jordyplascencia6" name="logo-github" class="ri-github-line icons"></i>
+                        <i name="logo-insta" class="ri-instagram-line icons"></i>
+                    </div>
+                    <span>Ingrese correo y password</span>
+                    <div class="container-input">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="container-input">
+                        <i class="ri-lock-password-line"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <a href="#">Olvidaste tu password?</a>
+                    <button class="button">Log In</button>
+                </form>
+            </div>
+            <!----Formulario Registro-->
+            <div class="container-form">
+                <form action="" class="singup">
+                    <h2>Registrarte</h2>
+                    <div class="social-network">
+                        <i name="logo-facebook" class="ri-facebook-circle-line icons"></i>
+                        <i name="logo-github" class="ri-github-line icons"></i>
+                        <i name="logo-insta" class="ri-instagram-line icons"></i>
+                    </div>
+                    <span>Ingrese correo para registrarse</span>
+                    <div class="container-input">
+                        <i class="ri-user-line"></i>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="container-input">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="container-input">
+                        <i class="ri-lock-password-line"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button class="button">Log Up</button>
+                </form>
+            </div>
+        </div>
+
+        <button id="btn">Click</button>
+
+        <script src="{% static 'script.js' %}"></script>
+    </body>
+
+</html>
